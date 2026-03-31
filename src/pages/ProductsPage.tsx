@@ -1,6 +1,6 @@
 import { useState } from 'react'
-import { useQuery } from 'convex/react'
-import { api } from '@/convex/_generated/api'
+// import { useQuery } from 'convex/react'
+// import { api } from '@/convex/_generated/api'
 import { Button } from '@/components/ui/button'
 import {
   Card,
@@ -13,7 +13,8 @@ import { ShoppingCart, Loader } from 'lucide-react'
 import { formatPrice } from '@/lib/stripe'
 
 export function ProductsPage() {
-  const products = useQuery(api.products.getProducts)
+  // const products = useQuery(api.products.getProducts)
+  const products: any[] = []
   const [loadingId, setLoadingId] = useState<string | null>(null)
 
   const handleAddToCart = async (productId: string) => {

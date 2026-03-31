@@ -1,6 +1,6 @@
 import { Suspense } from 'react'
-import { useQuery } from 'convex/react'
-import { api } from '@/convex/_generated/api'
+// import { useQuery } from 'convex/react'
+// import { api } from '@/convex/_generated/api'
 import { ThemeToggle } from '@/components/ThemeToggle'
 import { Button } from '@/components/ui/button'
 import {
@@ -13,7 +13,8 @@ import {
 import { LogOut, Settings } from 'lucide-react'
 
 function AppContent() {
-  const user = useQuery(api.users.getCurrentUser)
+  // const user = useQuery(api.users.getCurrentUser)
+  const user = null
 
   return (
     <div className="min-h-screen bg-gradient-to-br from-background to-muted">
